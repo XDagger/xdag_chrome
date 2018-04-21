@@ -1,0 +1,30 @@
+.paginationDiv {
+  display:inline-block;
+  margin: 20px 0;
+  color: #666;
+  text-align: center;
+  height: 30px;
+  span{
+    padding: 5px 12px;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #D2DAE2;
+    margin: 0 4px;
+    &.current{
+      border: 1px solid #4D93F7!important;
+      color: #4D93F7!important;
+    }
+  }
+  .disable{
+    border-color: #e5e5e5;
+    cursor: no-drop;
+  }
+  .ell{
+    border: 0;
+    padding: 5px;
+  }
+  .noShowP{
+    display: none;
+  }
+}

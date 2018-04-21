@@ -1,0 +1,12 @@
+$mainColor:#5991ed;
+$fontColor:#d5d7d9;
+
+$simple-line-font-path: "~dmocho-line-icons/fonts/";
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

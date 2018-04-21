@@ -1,0 +1,26 @@
+@import "~normalize-css/normalize.css";
+
+@import "config";
+
+body,html{padding: 0;margin: 0;font-size: 14px;color: #444; background: #fafafa;}
+a{color: #444;text-decoration:none;}
+input{outline: none;}
+ul,li{list-style: none;
+  padding: 0;
+  margin: 0;}
+dl,dd,dt,ul,li{margin: 0;padding: 0;}
+.maincontent{
+  width: 400px;
+  height:600px;
+  overflow-y: auto;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+div{
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{width:0!important;}
+[v-cloak] {
+  display: none;
+}

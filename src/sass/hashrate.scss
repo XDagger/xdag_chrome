@@ -1,0 +1,193 @@
+@import "config";
+
+@import "~dmocho-line-icons/scss/simple-line-icons";
+
+.explorerTop{
+  width: 100%;
+  height: 300px;
+  background: url("../images/hashrateTop.png");
+  color: $fontColor;
+
+}
+.netHashrate{
+  width: 180px;
+  height: 180px;
+  border-radius: 200px;
+  box-shadow: 0 0 100px $mainColor;
+  font-size: 12px!important;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 45px;
+  background: rgba(0,0,0,0);
+  display: block;
+  margin: 40px auto 0;
+  color: #ffffff;
+  .numH {
+    font-size: 45px;
+  }
+  .unit{
+    text-align: right;
+    font-size: 12px!important;
+    padding:5px 30px 0 0;
+  }
+}
+.discription{
+  font-size: 12px;
+  line-height: 18px;
+}
+.explorerContent{
+  //height:352px;
+  //overflow-y: auto;
+  background: #FFF;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.title{
+  color: #000000;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.hashrate{
+  padding:10px 15px;
+  box-sizing: border-box;
+  ul{
+    display: table;
+  }
+  li{
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    display: table-cell;
+    height: 126px;
+    vertical-align: middle;
+    word-break:break-all;
+    padding: 20px 20px 0;
+    font-size: 12px;
+    i{
+      font-size:28px;
+    }
+    .hashTag{
+      //background:$mainColor;
+      //color: #ffffff;
+      //padding: 0 10px;
+      //display: inline-block;
+      margin:5px 0;
+    }
+    &.blocks{
+      border-right: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+      i,.hashTag{
+        color: #588eeb;
+      }
+    }
+    &.main{
+      border-bottom: 1px solid #e5e5e5;
+      i,.hashTag{
+        color: #41b5e7;
+      }
+    }
+    &.difficulty{
+      border-right: 1px solid #e5e5e5;
+      i,.hashTag{
+        color: #3cb9d7;
+      }
+    }
+    &.supply{
+      i,.hashTag{
+        color: #26e1e4;
+      }
+    }
+    .hashCont{
+      font-size: 20px;
+      color: #666!important;
+      &.diff{
+        cursor: pointer;
+        position: relative;
+      }
+      &:hover{
+        .hashTips{
+          display: block;
+        }
+      }
+      .hashTips{
+        display: none;
+        font-size: 14px;
+        padding: 5px 8px;
+        background: #f8f8f8;
+        box-shadow: 0 0 6px #ddd;
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space:nowrap;
+      }
+    }
+  }
+}
+
+.address{
+  &>div{
+    padding: 20px 15px 10px;
+    position: relative;
+  }
+  .rhtTips{
+    position: absolute;
+    right:12px;
+    bottom: 8px;
+    font-size: 12px;
+    span{
+      display: block;
+      float: left;
+      margin: 5px 10px 0 0;
+      width: 5px;
+      height: 5px;
+    }
+    .darkblue{
+      background: #4c7bc2;
+    }
+    .blue{
+      background: #26e3e5;
+    }
+    .amoutbg{
+      background: #40baeb;
+      margin-left: 15px;
+    }
+  }
+  dl{
+    box-shadow: 0 0 6px #ddd;
+    padding: 15px;
+    margin-bottom: 17px;
+    dt{
+      font-size: 16px;
+      line-height: 18px;
+      color: #666666;
+      padding-bottom: 15px;
+    }
+    li{
+     display: inline-block;
+      font-size: 12px;
+      &.input{
+         background: #4c7bc2;
+         color: #ffffff;
+         line-height: 19px;
+         padding: 0 7px;
+         margin-right: 15px;
+       }
+      &.amount{
+        background: #40baeb;
+        color: #ffffff;
+        line-height: 19px;
+        padding: 0 7px;
+      }
+      &.time{
+        color: #999999;
+        float: right;
+        line-height: 22px;
+      }
+      &.output{
+        background: #26e3e5;
+
+      }
+    }
+  }
+}

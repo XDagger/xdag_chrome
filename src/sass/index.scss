@@ -1,0 +1,76 @@
+@import "config";
+
+@import "~dmocho-line-icons/scss/simple-line-icons";
+
+.bg{
+    background: url("../images/bg.jpg") no-repeat right top;
+    width:400px;
+    height:600px;
+}
+.logo{
+    text-align: center;
+    padding-top: 50px;
+    img{
+        margin-bottom: 12px;
+    }
+}
+.addressInput {
+    margin-top: 60px;
+    div{
+        width: 90%;
+        margin: 0 auto;
+    }
+    input{
+        border: 0;
+        background: none;
+        color: $fontColor;
+        font-weight: bold;
+        border-bottom: 1px solid $fontColor;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 52px;
+        height: 52px;
+        &::-webkit-input-placeholder{
+            color:$fontColor;
+        }
+        &:focus::-webkit-input-placeholder{
+            text-indent: -999em;
+            z-index: -20;
+        }
+    }
+    button{
+        background: rgba(89,145,237,.72);
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        border: 0;
+        color: $fontColor;
+        height: 50px;
+        line-height: 50px;
+        margin-top:24px;
+        &:hover{
+            background: rgba(89,145,237,1);
+        }
+    }
+
+}
+.linkGroup{
+    width: 90%;
+    margin: 116px auto 0;
+  font-size: 12px;
+    a{
+        color: $fontColor;
+        &:hover{
+            color: $mainColor;
+        }
+    }
+    li{
+        width: 33.33333333%;
+        text-align: center;
+        float: left;
+    }
+    i{
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "eslint-config-airbnb",
+  "rules": {
+    "padded-blocks": ["error", {
+      "classes": "always"
+    }],
+    "react/jsx-filename-extension": "off",
+    "linebreak-style": ["off", "windows"]
+  },
+  "env": {
+    "browser": true
+  }
+}
